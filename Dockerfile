@@ -12,6 +12,8 @@ ADD entrypoint.sh conf/eula.txt conf/server.properties /minecraft/
 
 WORKDIR /minecraft
 
+HEALTHCHECK CMD /usr/bin/nc 127.0.0.1 25565 < /dev/null || exit 1
+
 EXPOSE 25565
 
 ENTRYPOINT /minecraft/entrypoint.sh
