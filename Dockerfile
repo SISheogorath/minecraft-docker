@@ -4,7 +4,7 @@ MAINTAINER Sheogorath <sheogorath@shivering-isles.com> (@SISheogorath)
 
 RUN apk add --no-cache wget && \
     mkdir /minecraft && \
-    wget https://s3.amazonaws.com/Minecraft.Download/versions/1.11/minecraft_server.1.11.jar -O /minecraft/minecraft-server.jar && \
+    wget https://s3.amazonaws.com/Minecraft.Download/versions/1.11.2/minecraft_server.1.11.2.jar -O /minecraft/minecraft-server.jar && \
     apk del wget
 
 
