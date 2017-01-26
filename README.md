@@ -14,13 +14,21 @@ First, a simple run command:
 $ docker run -e MC_ACCEPT_EULA=true -p 25565:25565 sheogorath/minecraft
 ```
 
-This will start an inspircd instance listening on the default irc port 6667 on the container.
+This will start the minecraft container in creative mode.
 
 To configure include your configuration into the container use:
 
 ```console
 $ docker run --name minecraft -p 25565:25565 -e MC_ACCEPT_EULA=true -e MC_MAX_PLAYERS=15 -e MC_GAMEMODE=1 sheogorath/minecraft
 ```
+
+To keep your game data and be able to store your data on a persistent volume, run the following command:
+
+```console
+$ mkdir -p data && sudo chown 10000 data && sudo docker run --name minecraft -p 25565:25565 -e MC_ACCEPT_EULA=true -v `pwd`/data:/data sheogorath/minecraft
+```
+
+The container automatically manages that your world is kept in `/data`
 
 # Configuration
 

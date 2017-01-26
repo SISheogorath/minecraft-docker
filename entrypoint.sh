@@ -39,4 +39,6 @@ echo max-build-height=${MC_MAX_BUILD_HEIGHT:-256} >> /minecraft/server.propertie
 echo level-seed=${MC_LEVEL_SEED:-} >> /minecraft/server.properties
 echo motd=${MC_MOTD:-Welcome to a minimal Docker Minecraft Server} >> /minecraft/server.properties
 
+ln -s /data "/minecraft/${MC_LEVEL_NAME:-Docker-world}"
+
 /usr/bin/java -Xms1G -Xmx1G -jar minecraft-server.jar nogui
