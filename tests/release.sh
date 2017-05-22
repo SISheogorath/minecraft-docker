@@ -30,7 +30,7 @@ docker pull sheogorath/pup-docker
 MC_LATEST_VERSION=$(wget -qO- https://mcversions.net/ | docker run --rm -i sheogorath/pup-docker "ul .latest strong.version text{}")
 
 if version_ge "$MC_VERSION" "${MC_LATEST_VERSION}"; then
-    echo "InspIRCd version ($MC_VERSION) is up to date! Test successful."
+    echo "Minecraft version ($MC_VERSION) is up to date! Test successful."
 else
     echo >&2 "A newer base image is available! Please update. New version is ${MC_LATEST_VERSION}"
     exit 1
