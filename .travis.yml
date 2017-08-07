@@ -10,7 +10,7 @@ before_install:
 
 env:
   global:
-    MC_VERSION="1.12"
+    MC_VERSION="1.12.1"
 
 script:
   # Initial build with default parameters
