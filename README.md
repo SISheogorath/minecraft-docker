@@ -1,6 +1,8 @@
 Docker Minecraft Container
 ===
 
+[![Build Status](https://travis-ci.org/SISheogorath/minecraft-docker.svg?branch=master)](https://travis-ci.org/SISheogorath/minecraft-docker)
+
 > Minecraft is a sandbox video game originally created by Swedish game designer Markus "Notch" Persson and later developed and published by Mojang. The creative and building aspects of Minecraft enable players to build constructions out of textured cubes in a 3D procedurally generated world.
 > -- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Minecraft&oldid=750904035)
 
@@ -90,11 +92,11 @@ All needed configs are available using environment variables.
 
 # License
 
-View [license information](https://minecraft.net/terms) for the software contained in this image. And the EULA 
+View [license information](https://minecraft.net/terms) for the software contained in this image. And the EULA.
 
 # Supported Docker versions
 
-This image is officially supported on Docker version 1.12.3.
+This image is officially supported on Docker version 17.06-ce.
 
 Please see [the Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
