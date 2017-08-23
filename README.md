@@ -2,6 +2,7 @@ Docker Minecraft Container
 ===
 
 [![Build Status](https://travis-ci.org/SISheogorath/minecraft-docker.svg?branch=master)](https://travis-ci.org/SISheogorath/minecraft-docker)
+[![MadIRC Admins](https://img.shields.io/badge/MadIRC-%23Admins-green.svg)](https://webclient.madirc.net/?join=%23Admins)
 
 > Minecraft is a sandbox video game originally created by Swedish game designer Markus "Notch" Persson and later developed and published by Mojang. The creative and building aspects of Minecraft enable players to build constructions out of textured cubes in a 3D procedurally generated world.
 > -- [Wikipedia](https://en.wikipedia.org/w/index.php?title=Minecraft&oldid=750904035)
