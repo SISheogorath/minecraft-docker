@@ -4,7 +4,7 @@ MAINTAINER Sheogorath <sheogorath@shivering-isles.com> (@SISheogorath)
 
 COPY entrypoint.sh conf/eula.txt conf/server.properties /minecraft/
 
-ARG VERSION=1.12.1
+ARG VERSION=1.12.2
 
 RUN apk add --no-cache wget && \
     mkdir -p /minecraft /data && \
